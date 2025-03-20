@@ -37,12 +37,24 @@ I accessed the AWS Management Console and navigated to the EC2 dashboard. There,
 ## **Step 2: Using SSH to Connect to EC2 Instances**
 To further analyze the issue, I attempted SSH access to both instances running the following command: 
 
+
    ```
+   # InstanceA
    cd ~/Downloads
    
    ls -l labsuser.pem
 
 ssh -i labsuser.pem ec2-user@10.0.10.226
+
+   ```
+
+  ```
+# Instance B
+   cd ~/Downloads
+   
+   ls -l labsuser.pem
+
+ssh -i labsuser.pem ec2-user@34.219.185.136
 
    ```
 
