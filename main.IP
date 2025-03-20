@@ -1,0 +1,19 @@
+  ```
+   #InstanceA
+   cd ~/Downloads
+   
+   ls -l labsuser.pem
+
+ssh -i labsuser.pem ec2-user@10.0.10.226
+
+   ```
+
+  ```
+#InstanceB
+   cd ~/Downloads
+   
+   ls -l labsuser.pem
+
+ssh -i labsuser.pem ec2-user@34.219.185.136
+
+   ```
