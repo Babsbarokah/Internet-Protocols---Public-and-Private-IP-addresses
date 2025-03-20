@@ -19,12 +19,32 @@ The customer's architecture was as follows:
 
 I accessed the AWS Management Console and navigated to the EC2 dashboard. There, I examined the networking configurations of both EC2 instances.
 
+<img width="1439" alt="Screenshot 2025-03-20 at 01 05 57" src="https://github.com/user-attachments/assets/937b713a-dba5-4a78-a314-d4222316152f" />
+
+---
+
 - **Instance A:** Only had a private IP address.
+  <img width="1440" alt="Screenshot 2025-03-20 at 01 10 22" src="https://github.com/user-attachments/assets/9c5c51e6-9ed4-4886-bbf3-b604ee584847" />
+---
+
 - **Instance B:** Had both a private and a public IP address.
+  <img width="1440" alt="Screenshot 2025-03-20 at 01 11 12" src="https://github.com/user-attachments/assets/d304b272-cad6-4b25-9951-6af196bae7c1" />
+
+
+---
 - **Observation:** The difference in internet access stemmed from the presence or absence of a public IP address.
 
 ## **Step 2: Using SSH to Connect to EC2 Instances**
-To further analyze the issue, I attempted SSH access to both instances:
+To further analyze the issue, I attempted SSH access to both instances running the following command: 
+
+   ```
+   cd ~/Downloads
+   
+   ls -l labsuser.pem
+
+ssh -i labsuser.pem ec2-user@10.0.10.226
+
+   ```
 
 - **Instance B (Public IP Address):** Successfully connected via SSH.
 - **Instance A (Private IP Address):** Unable to connect from an external network due to the lack of a public IP.
