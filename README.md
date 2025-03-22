@@ -2,10 +2,15 @@
 Troubleshooting EC2 Internet Connectivity &amp; CIDR Best Practices
 
 
+
+
 ## **Project Overview**
 
 I analyzed a real-life case scenario where a Fortune 500 company faced a networking issue within their AWS infrastructure. The setup included a VPC with a CIDR range of 10.0.0.0/16 and two EC2 instances, but only one had internet access. Additionally, the scenario posed a question about using a public CIDR range for a new VPC.
 
+<img width="832" alt="Screenshot 2025-03-22 at 12 11 40" src="https://github.com/user-attachments/assets/24e0db80-6510-4e61-9de5-20e961ce39a5" />
+
+Image: customers architecture
 
 ## **Step 1: Investigating the Environment**
 
